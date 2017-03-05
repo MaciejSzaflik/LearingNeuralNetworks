@@ -17,5 +17,13 @@ class Main
 		trace("Sit neuron: " + result[0] * 100);
 		trace("Run neuron: " + result[1] * 100);
 		trace("Jump neuron: " + result[2] * 100);
+		
+		
+		var temperature = new TemperatureNetwork();
+		temperature.train();
+		
+		temperature.getOutput(11);
+		temperature.getOutput(32);
+		temperature.getOutput(5);
 	}
 }
